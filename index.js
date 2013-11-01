@@ -20,7 +20,7 @@ module.exports = function wrap(fn, superFn) {
     }
 
     // Create a new super:
-    this._super = superFn || Empty();
+    this._super = superFn || Empty;
 
     // Call the method:
     val = fn.apply(this, arguments);
@@ -31,6 +31,8 @@ module.exports = function wrap(fn, superFn) {
     return val;
   }
 
+
+  superWrapper.wrappedFunction = fn;
 
   return superWrapper;
 }
