@@ -15,6 +15,10 @@ module.exports = function wrap(fn, superFn) {
     // Backup the original _super:
     var sup = this._super, val;
 
+    if (superFn == null) {
+      superFn = Empty;
+    }
+
     // Create a new super:
     this._super = superFn || Empty();
 
