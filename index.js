@@ -16,7 +16,7 @@ module.exports = function wrap(fn, superFn) {
     var sup = this._super;
 
     // Create a new super:
-    this._super = superFn;
+    this._super = superFn || Empty();
 
     // Call the method:
     fn.apply(this, arguments);
