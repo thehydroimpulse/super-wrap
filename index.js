@@ -23,9 +23,6 @@ module.exports = function wrap(fn, superFn) {
 
     // Restore the original _super.
     this._super = sup;
-
-    // Return ourselves.
-    return this;
   }
 
 
