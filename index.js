@@ -13,16 +13,18 @@ module.exports = function wrap(fn, superFn) {
   function superWrapper() {
 
     // Backup the original _super:
-    var sup = this._super;
+    var sup = this._super, val;
 
     // Create a new super:
     this._super = superFn || Empty();
 
     // Call the method:
-    fn.apply(this, arguments);
+    val = fn.apply(this, arguments);
 
     // Restore the original _super.
     this._super = sup;
+
+    return val;
   }
 
 
