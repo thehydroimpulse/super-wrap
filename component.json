@@ -1,0 +1,19 @@
+{
+  "repo": "thehydroimpulse/super-wrap",
+  "name": "super-wrap",
+  "version": "0.0.1",
+  "author": "Daniel Fagnan <dnfagnan@gmail.com>",
+  "description": "A dynamic function inheritence (super).",
+  "license": "MIT",
+  "keywords": [
+    "super",
+    "inherit",
+    "dynamic",
+    "wrap",
+    "class",
+    "ember",
+    "super wrap",
+    "ember.js super",
+    "function super"
+  ]
+}

@@ -5,6 +5,18 @@ Super wrap wraps child & parent functions to create a proper `_super` chain. Thi
 
 This is primarily used in Ember.js, but would be useful as it's own library, instead of being in a mammoth of a framework.
 
+## Install
+
+NPM:
+```bash
+npm install super-wrap
+```
+
+Component:
+```bash
+component install thehydroimpulse/super-wrap
+```
+
 ## Usage:
 
 This module exports a single function:
